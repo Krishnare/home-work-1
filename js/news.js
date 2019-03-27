@@ -5,9 +5,7 @@ class fetchdata {
     let globalData = {};
     fetch(url)
       .then(response => response.json())
-      .then(myJson => {
-        instance.printResults(myJson);
-      })
+      .then(myJson => instance.printResults(myJson))
       .catch(error => { console.log("Something went wrong on server") });
   }
   printResults(data) {
