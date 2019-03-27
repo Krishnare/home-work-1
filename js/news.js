@@ -1,8 +1,8 @@
 
 'use strict';
 class fetchdata {
-  constructor(data) {
-  }
+  // constructor(data) {
+  // }
   fetchResults(url) {
     let globalData = {};
     fetch(url)
@@ -26,7 +26,6 @@ class fetchdata {
       }
       returnHtml += `${uniqueVal}<div class="newsTitle">${value.title}</div><div class="newsDescription">${value.description}</div><div class="publishDate">${value.publishedAt}</div><div class="imageContainer"><a href="${value.url}" target="_blank"><img src=${value.urlToImage} /></a></div>`;
     });
-
     elementId.insertAdjacentHTML('afterbegin', returnHtml);
   }
 }
