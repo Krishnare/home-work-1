@@ -1,8 +1,6 @@
 
 'use strict';
 class fetchdata {
-  // constructor(data) {
-  // }
   fetchResults(url) {
     let globalData = {};
     fetch(url)
